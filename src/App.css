@@ -4,6 +4,9 @@
   padding: 0;
 }
 
+body {
+  background-color: rgb(39, 151, 151);
+}
 .header {
   text-align: center;
   margin: 1rem;
@@ -20,4 +23,28 @@
   padding: 1rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+}
+
+.btn-submit {
+  display: block;
+  width: 100%;
+  background-color: purple;
+  margin: 2rem 0;
+}
+
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  display: block;
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
 }
