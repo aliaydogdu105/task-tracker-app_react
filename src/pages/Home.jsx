@@ -1,10 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "../components/Header";
 import ShowTasks from "../components/ShowTasks";
-import data from "../helper/starterData";
+// import data from "../helper/starterData";
 
 const Home = () => {
-  const [tasks, setTasks] = useState(data);
+  const [tasks, setTasks] = useState(
+    JSON.parse(localStorage.getItem("tasks")) || []
+  );
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   return (
     <div>
