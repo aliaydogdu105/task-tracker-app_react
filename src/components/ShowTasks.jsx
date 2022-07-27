@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import {TiTrash} from "react-icons/ti";
 
 const ShowTasks = ({ tasks, setTasks }) => {
   const [done, setDone] = useState(true);
@@ -22,13 +23,13 @@ const ShowTasks = ({ tasks, setTasks }) => {
 
     return (
       <div>
-        <div className="" key={id} onClick={handleDone}>
-          <div className="">
+        <div className="display-tasks" key={id} onClick={handleDone}>
+          <div className="task">
             <h2>{task}</h2>
             <p>{day} </p>
           </div>
-          <div className="" onClick={() => handleDelete(id)}>
-            delete
+          <div className="dlt" onClick={() => handleDelete(id)}>
+          <TiTrash size={42}/>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {FcTodoList} from "react-icons/fc"
 import AddTaskForm from "./AddTaskForm";
 
 const Header = ({ tasks, setTasks }) => {
@@ -23,7 +24,7 @@ const Header = ({ tasks, setTasks }) => {
   };
   return (
     <header className="header">
-      <h1>Task Tracker</h1>
+      <h1>Task Tracker <FcTodoList size={30}></FcTodoList></h1>
       <button
         className="btn"
         onClick={handleShow}

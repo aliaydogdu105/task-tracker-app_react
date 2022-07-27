@@ -13,7 +13,7 @@ const Home = () => {
   }, [tasks]);
 
   return (
-    <div>
+    <div className="container">
       <Header tasks={tasks} setTasks={setTasks} />
       <ShowTasks tasks={tasks} setTasks={setTasks} />
     </div>
