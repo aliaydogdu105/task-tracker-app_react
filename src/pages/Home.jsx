@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div>
       <Header tasks={tasks} setTasks={setTasks} />
-      <ShowTasks />
+      <ShowTasks tasks={tasks} setTasks={setTasks} />
     </div>
   );
 };
