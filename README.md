@@ -31,4 +31,6 @@ SOLUTION
 └── yarn.lock
 ```
 
+![](task-tracker.gif)
+
 For look [please click here](https://task-tracker-react-ali.netlify.app/)
